@@ -2,7 +2,7 @@
   "name": "polar-night-theme",
   "displayName": "Polar Night Theme",
   "description": "A deep navy dark theme with rich but muted syntax colors, designed for focused, distraction-free coding sessions.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "evren",
   "license": "MIT",
   "engines": {
