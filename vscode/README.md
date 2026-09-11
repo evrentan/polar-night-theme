@@ -6,11 +6,11 @@ A deep navy dark theme with rich but muted syntax colors, designed for focused, 
 
 ## Preview
 
-![TypeScript](./images/polar-theme-typescript.png)
+![TypeScript](https://raw.githubusercontent.com/evrentan/polar-night-theme/main/vscode/images/polar-theme-typescript.png)
 
-![JavaScript](./images/polar-theme-javascript.png)
+![JavaScript](https://raw.githubusercontent.com/evrentan/polar-night-theme/main/vscode/images/polar-theme-javascript.png)
 
-![CSS](./images/polar-theme-css.png)
+![CSS](https://raw.githubusercontent.com/evrentan/polar-night-theme/main/vscode/images/polar-theme-css.png)
 
 ## Installation
 
