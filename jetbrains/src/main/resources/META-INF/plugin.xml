@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.evren.polar-night-theme</id>
+    <name>Polar Night Theme</name>
+    <version>1.0.0</version>
+
+    <vendor url="https://github.com/evrentan/polar-night-theme">evren</vendor>
+
+    <description><![CDATA[
+        A deep navy dark theme with rich but muted syntax colors,
+        designed for focused, distraction-free coding sessions.
+        <br/><br/>
+        Features:
+        <ul>
+            <li>Deep navy background — easy on eyes for long sessions</li>
+            <li>Rich but desaturated palette: sage green, soft amber, lavender, pale blue</li>
+            <li>Full UI coverage: editor, tool windows, terminal, diff, debugger, VCS log</li>
+            <li>Comprehensive syntax support: Java, Kotlin, Python, JS/TS, Go, Rust, CSS, HTML, XML, JSON, YAML, Markdown</li>
+            <li>Italic comments for visual hierarchy</li>
+        </ul>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider
+            id="com.evren.polar-night-theme"
+            path="/themes/polar-night.theme.json"/>
+    </extensions>
+</idea-plugin>

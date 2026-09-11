@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  # ─── VSCode ─────────────────────────────────────────────────────────────────
+  build-vscode:
+    name: VSCode — Package & Validate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vscode
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Package extension (sanity check)
+        run: vsce package --no-dependencies
+
+  # ─── JetBrains ──────────────────────────────────────────────────────────────
+  build-jetbrains:
+    name: JetBrains — Build & Validate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: jetbrains
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.9'
+
+      - name: Build plugin (sanity check)
+        run: gradle buildPlugin

@@ -1,0 +1,36 @@
+# VSCode
+vscode/*.vsix
+vscode/node_modules/
+vscode/.vscode-test/
+
+# JetBrains build & Gradle
+jetbrains/build/
+jetbrains/.gradle/
+jetbrains/.intellijPlatform/
+jetbrains/gradle/wrapper/gradle-wrapper.jar
+
+# JetBrains IDE files
+.idea/
+!vscode/.vscode/
+*.iml
+*.iws
+*.ipr
+*.hprof
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.apdisk
+Network Trash Folder
+Temporary Items
+
+# General
+*.log
+

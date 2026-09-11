@@ -1,0 +1,45 @@
+{
+  "name": "polar-night-theme",
+  "displayName": "Polar Night Theme",
+  "description": "A deep navy dark theme with rich but muted syntax colors, designed for focused, distraction-free coding sessions.",
+  "version": "1.0.0",
+  "publisher": "evren",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dark",
+    "navy",
+    "theme",
+    "polar",
+    "night",
+    "focus",
+    "muted"
+  ],
+  "galleryBanner": {
+    "color": "#0d1b2e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Polar Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/polar-night-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evrentan/polar-night-theme"
+  },
+  "homepage": "https://github.com/evrentan/polar-night-theme/tree/main/vscode",
+  "bugs": {
+    "url": "https://github.com/evrentan/polar-night-theme/issues"
+  },
+  "icon": "icon.png"
+}

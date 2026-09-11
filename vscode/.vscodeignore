@@ -1,0 +1,23 @@
+.vscode/**
+.vscode-test/**
+node_modules/**
+
+# Config & build artifacts
+.gitignore
+*.vsix
+*.svg
+*.log
+
+# Markdown (keep README and CHANGELOG for Marketplace)
+*.md
+!README.md
+!CHANGELOG.md
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
